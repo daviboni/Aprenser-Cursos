@@ -1,0 +1,256 @@
+:root{
+    --width_menu: calc(100vh - 90px)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helve, sans-serif;
+    overflow-x: hidden;
+
+}
+
+main {
+    position: absolute;
+    top: 90px; 
+    width: 100%;
+    background-color: #f5f5f5;
+    z-index: 1; 
+}
+
+.container-banner{
+    height: var(--width_menu);
+    background: linear-gradient(183deg, rgba(255,255,255,1) 7%, rgba(254,254,76,1) 100%);
+    display: flex;
+    padding: 0 10px;
+}
+
+.container-banner div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+.container-banner > div > h1{
+    width: 80%;
+    max-width: 500px;
+    font-size: 4.5rem;
+}
+
+.container-banner > div > a{
+    width: fit-content;
+    font-size: 1.7rem;
+    padding: 12px 25px;
+    color: black;
+    background-color: #F8CB02;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: all ease-in .1s;
+}
+
+.container-banner > div > a:hover{
+    background-color: #2B2A2B;
+    color: #F8CB02;
+}
+.container-banner img{
+    height: 90%;
+    display: flex;
+    margin: auto 6rem 0;
+}
+
+.container-cursos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: var(--width_menu);
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.container-cursos > h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.block-cursos{
+    display: flex;
+    margin: 0 auto;
+}
+
+.link-curso{
+    width: 300px;
+    height: auto;
+    margin: 5rem 1rem;
+    background-color: white;
+    color: black;
+    transition: all ease-in .2s;
+    border-radius: 6px 6px 0 0;
+}
+
+.link-curso:hover{
+    transform: scale(1.03);
+}
+
+.link-curso img{
+    width: 100%;
+}
+
+.link-curso h3{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    padding: 0 10px;
+}
+
+.link-curso p{
+    margin: 3rem 0;
+    font-size: 1.3rem;
+    color: #4e4e4e;
+    padding: 0 10px;
+}
+
+#link-mais-cursos{
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding: 13px 20px;
+    color: black;
+    background-color: #F8CB02;
+    border-radius: 5px;
+}
+
+.container-escola{
+    width: 100%;
+    background-color: #003464;
+    display: flex;
+    padding: 5rem 3rem 0;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 5%;
+
+}
+
+.container-escola img{
+    height: 450px;
+}
+
+.container-escola > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-escola > div h3{
+    font-size: 2.5rem;
+    color: white;
+    width: 100%;
+}
+
+.container-escola > div p{
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    padding-right: 10%;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: white;    
+}
+
+.container-contatos{
+    width: 100%;
+    padding: 5rem 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-contatos label{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.container-contatos div{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: end;
+    margin: 3rem 0;
+    font-size: 1.6rem;
+}
+
+.container-contatos div p{margin: .2rem 0;}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111; 
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+@media screen and (max-width: 1050px) {
+}
+
+@media screen and (max-width: 1050px) {
+    .container-banner {
+        background-image: url(../img/HeroImage.png);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 0;
+    }
+    .container-banner div {
+        align-items: center;
+        margin-left: 0;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    .container-banner > div > h1 {color: white; text-shadow: 2px 3px 4px rgb(27, 26, 26); margin-bottom: 1rem;}
+
+    .container-banner img {display: none;}
+
+    .block-cursos {
+        flex-wrap: wrap;
+        max-width: 1000px;
+        justify-content: center;
+    }
+    .container-escola {padding: 0;}
+    .container-escola > div {padding: 5rem 2rem;}
+    .container-escola img {display: none;}
+    .container-escola > div h3 {text-align: center; padding: 3rem;}
+    .container-escola > div p {text-align: justify; padding: 0;}
+
+}
+
+@media screen and (max-width: 330px) {
+    #nav-menu {width: 70%;}
+    .link-curso {
+        width: 95%;
+    }
+    
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenser</title>
+    
+    <meta name="description" content="Explore nosso projeto de design que exemplifica uma possível criação para o seu site de cursos. Nossa abordagem combina estética visual atraente com funcionalidades intuitivas, criando uma experiência de usuário envolvente e informativa. Veja como podemos transformar sua visão em realidade.">
+    <meta name="author" content="Davi Bonni">
+    <link rel="shortcut icon" type="image/x-icon" href="static/img/logoAprenser.png">
+
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/menu.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <header class="menu" id="header-menu" status="hidden">
+        <img src="static/img/logoAprenser.png" alt="Logo Aprenser" id="logo-menu">
+        <img src="static/img/logoAprenser-preto.png" alt="Logo Aprenser" id="logo-menu-preto">
+        <span class="btn-menu-mobile material-symbols-outlined margin-menu" id="btn-open" onclick="StatusMenuNav(this)">menu</span>
+        <ul id="nav-menu">
+            <span class="material-symbols-outlined btn-close-mobile padding-menu"  id="btn-close" onclick="StatusMenuNav(this)">close</span>
+            <li class="link-menu margin-first-link"><a href="#cursos">Cursos</a></li>
+            <li class="link-menu margin-link"><a href="#nossa-escola">Nossa Escola</a></li>
+            <li class="link-menu margin-link"><a href="#contatos">Contatos</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container-banner">
+            <div>
+                <h1>O saber é o que transforma nosso <strong>ser</strong></h1>
+                <a href="saiba-mais">Saiba Mais</a>
+            </div>
+            <img src="static/img//HeroImage.png" alt="Mulher com Flor">
+        </section>
+        <section class="container-cursos" id="cursos">
+            <h2>Princiapais Cursos</h2>
+            <div class="block-cursos">
+                <a class="link-curso" href="design-web">
+                    <img src="static/img//curso-design.png" alt="Curso Web Design">
+                    <h3>Design para Web</h3>
+                    <p>O curso Design para Web é perfeito para aqueles que desejam aprender a criar designs atraentes e funcionais para sites e aplicativos móveis.</p>
+                </a>
+                <a class="link-curso" href="front-developer">
+                    <img src="static/img//curso-design-1.png" alt="Curso Desenvolvedor Front End">
+                    <h3>Front End Developer</h3>
+                    <p>Aprenda HTML, CSS e Javascript e crei interfaces ricas e semânticas para páginas web, aplicativos on-line ou até mesmo aplicações para aparelhos celulares</p>
+                </a>
+                <a class="link-curso" href="back-developer">
+                    <img src="static/img//curso-design-2.png" aglt="Curso Desenvolvedor Back End">
+                    <h3>Back End Developer</h3>
+                    <p>Com este curso você vai dominar uma linguagem back-end a sua escolha, um sistema de banco de dados e aprenderá como funciona o protocolo HTTP na prática.</p>
+                </a>
+            </div>
+            <a href="mais-cursos" id="link-mais-cursos">Veja mais cursos</a>
+        </section>
+
+        <section class="container-escola" id="nossa-escola">
+            <img src="static/img/nossa-escola.png" alt="Mulher Estudando">
+            <div>
+                <h3>Nossa Escola</h3>
+                <p>
+                    Aprenda habilidades tecnológicas em demanda e alcance seus objetivos de carreira com a nossa escola de tecnologia 
+                    online. Oferecemos uma ampla gama de cursos online, desde programação e desenvolvimento de software até design 
+                    gráfico e análise de dados. Nossos instrutores experientes fornecerão a você um ambiente de aprendizado interativo 
+                    e de suporte para ajudá-lo a adquirir as habilidades necessárias para ter sucesso em sua carreira. Inscreva-se agora 
+                    e comece sua jornada para se tornar um profissional de tecnologia bem-sucedido.
+                </p>
+            </div>
+        </section>
+        <section class="container-contatos" id="contatos">
+            <label for="idmaps">Endereço e Contatos</label>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.016372750131!2d-34.85774022580405!3d-7.124099169865068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace80aa42207b7%3A0x7a6fca5349cd8c65!2sPBSoft!5e0!3m2!1spt-BR!2sbr!4v1693681137392!5m2!1spt-BR!2sbr" 
+                id="idmaps" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div>
+                <p>Av. Expedicionários, 481 - Expedicionários</p>
+                <p>Tel.: +55 89 99123 456</p>
+                <p>E-mail: contato@aprenser.com</p>
+            </div>
+        </section>
+        <footer>
+            <p>Desenvolvido por <a href="https://portfolio-davibonni.netlify.app/" target="_blank"><strong>davibonni</strong>@</a></p>
+        </footer>
+    </main>   
+    <script src="static/js/index.js" type="text/javascript"></script>
+
+</body>
+</html>

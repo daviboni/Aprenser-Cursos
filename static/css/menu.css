@@ -1,0 +1,117 @@
+
+#header-menu {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    background-color: #2B2A2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; /* Impede o efeito de diminuição durante a rolagem */
+    z-index: 2;
+}
+
+#btn-close, #btn-open{display: none; cursor: pointer; color: white;
+}
+
+.container-logo-menu{display: flex; align-items: center;}
+
+#logo-menu, #logo-menu-preto{
+    height: 70%;
+    margin: auto 0 auto 10rem;
+}
+#logo-menu{display: flex;}
+#logo-menu-preto{display: none;}
+
+#nav-menu{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    list-style-type: none;
+    justify-content: end;
+    padding-right: 10%;
+}
+
+.link-menu{
+    margin: 0 1rem;
+    border: 1px solid #FED001;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.link-menu a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    padding: 12px;
+    color: #FED001;
+    cursor: pointer;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    transition: all ease-in .2s;
+}
+
+.link-menu a:hover{
+    background-color: #FED001;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 880px) {
+    #header-menu{padding: 0 1.5rem; background-color: #F8CB02;}
+    #nav-menu{
+        width: 280px;
+        height: 100%;
+        position: fixed;
+        right: -100%;
+        flex-direction: column;
+        justify-content: normal;
+        background-color: rgba(0, 0, 0, .97);
+        transition: all .7s ease-in-out;
+        padding: .1px;
+        z-index: 999;
+    }   
+
+    #header-menu[status="visible"] #nav-menu{right: 0;}
+    #header-menu[status="hidden"] #nav-menu{opacity: 0;}
+
+    #logo-menu{display: none;}
+    #logo-menu-preto {display: flex; margin: auto 0;}
+    #btn-open{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        align-items: center;
+        color: black;
+        transition: all .3s ease;
+    }
+    #header-menu[status="visible"] #btn-open{opacity: 0;}
+    #btn-close{
+        display: flex;
+        height: 90px;
+        padding-right: 1.5rem;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .link-menu {
+        border-radius: 0;
+        border: 0;
+        border-top: 1px solid #FED001;
+        border-bottom: 1px solid #FED001;
+
+    }
+    .margin-link {
+        margin: .5rem 0;
+    }
+
+    .margin-first-link{
+        margin: 2rem 0 .5rem ;
+    }
+}
+
+@media screen and (max-width: 310px) {#nav-menu {width: 70%;}}
